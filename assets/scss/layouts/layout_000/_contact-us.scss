@@ -1,0 +1,65 @@
+.contact-us {
+  padding-top: 38px;
+  padding-bottom: 38px;
+
+  &__title-box {
+  }
+
+  &__title {
+    @include font-size(32, 43);
+    font-weight: $light;
+    color: $contactTitle;
+    text-transform: capitalize;
+    padding-bottom: 7px;
+
+    &_mob {
+      display: block;
+    }
+    &_desk {
+      display: none;
+    }
+  }
+
+  &__subtitle {
+    @include font-size(16, 19);
+    font-weight: $light;
+    color: $contactSubtitle;
+    padding-bottom: 7px;
+
+    &_mob {
+      display: block;
+    }
+    &_desk {
+      display: none;
+    }
+  }
+
+  &__img-box {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+
+      g g {
+        animation: brain 2s linear infinite;
+      }
+    }
+  }
+}
+
+@keyframes brain {
+  0% {
+    filter: blur(10px);
+  }
+  50% {
+    filter: blur(20px);
+  }
+  100% {
+    filter: blur(10px);
+  }
+}

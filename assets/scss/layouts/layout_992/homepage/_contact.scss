@@ -1,0 +1,32 @@
+.home-contact-us {
+  padding-bottom: 83px;
+
+  &__row {
+    @include flex(space-between, flex-start, row, nowrap);
+  }
+
+  &__text-box {
+    flex: 0 0 50%;
+    padding-right: 15%;
+  }
+
+  &__title {
+    @include font-size(62, 85);
+    padding-bottom: 24px;
+    // margin-bottom: 33px;
+  }
+
+  &__subtitle {
+    @include font-size(30, 52);
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    @include font-size(18, 31);
+  }
+
+  &__form {
+    flex: 0 0 50%;
+    padding-top: 24px;
+  }
+}

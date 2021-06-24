@@ -1,0 +1,77 @@
+.home-services {
+  margin-bottom: 80px;
+  position: relative;
+
+  &__section-title {
+    @include font-size(62, 85);
+    padding-bottom: 24px;
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__slide {
+    padding: 34px 64px 34px 130px;
+  }
+
+  &__text-box {
+    flex: 0 0 55%;
+  }
+
+  &__title {
+    @include font-size(44, 56);
+    padding-bottom: 35px;
+  }
+
+  &__subtitle {
+    @include font-size(20, 32);
+  }
+
+  &__link {
+    @include font-size(18, 24);
+    padding: 12px 40px;
+    margin-top: 54px;
+  }
+
+  &__img-box {
+    flex: 0 0 45%;
+  }
+
+  &__nav {
+    position: absolute;
+    z-index: 99;
+    bottom: 34px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: auto;
+  }
+  &__arrow-box {
+    padding-bottom: 52px;
+  }
+  &__arrow {
+    height: 40px;
+
+    svg {
+      height: 100%;
+    }
+
+    &:after {
+      content: "";
+    }
+  }
+
+  &__pagination {
+    .swiper-pagination-bullet {
+      width: 19px;
+      height: 19px;
+      margin: 0 15px;
+
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

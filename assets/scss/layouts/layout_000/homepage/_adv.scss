@@ -1,0 +1,61 @@
+.advantages {
+  padding-bottom: 28px;
+
+  &__section-title {
+    @include font-size(24, 32);
+    font-weight: $light;
+    color: $homeSerTitle;
+    text-transform: capitalize;
+    padding-bottom: 13px;
+  }
+
+  &__intro-text-box {
+    padding-bottom: 15px;
+  }
+
+  &__intro-text {
+    @include font-size(12, 21);
+    font-weight: $light;
+    color: $clientsText;
+  }
+
+  &__box {
+    @include flex(flex-start, center, column);
+  }
+
+  &__item {
+    @include flex(space-between, center, row, nowrap);
+    flex: 0 0 100%;
+
+    padding: 15px 24px;
+    background: $clientsBg;
+
+    margin-bottom: 8px;
+  }
+
+  &__img-box {
+    flex: 0 0 38px;
+    height: 38px;
+  }
+
+  &__img {
+    @include img-fluid;
+    height: auto;
+  }
+
+  &__text-box {
+    padding-left: 26px;
+  }
+
+  &__title {
+    @include font-size(14, 17);
+    font-weight: $light;
+    color: $advTitle;
+  }
+
+  &__text {
+    @include font-size(12, 18);
+    font-weight: $light;
+    color: $advText;
+  }
+}

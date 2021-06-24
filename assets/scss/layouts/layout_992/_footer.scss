@@ -1,0 +1,22 @@
+.footer {
+  padding: 15px 0;
+
+  &__row {
+    @include flex(space-between, center, row, nowrap);
+  }
+
+  &__logo-box {
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  &__soc-item {
+    svg path {
+      transition: fill 0.3s ease, opacity 0.3s ease;
+    }
+    svg:hover path {
+      fill: $footerIconHover;
+      opacity: 1;
+    }
+  }
+}

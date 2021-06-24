@@ -1,0 +1,38 @@
+.intro {
+  padding-top: 173px;
+  padding-bottom: 215px;
+
+  &__row {
+    @include flex(center, center, row, nowrap);
+  }
+
+  &__text-box {
+    flex: 1;
+  }
+
+  &__title {
+    @include font-size(90, 107);
+    text-align: initial;
+    padding-bottom: 47px;
+  }
+
+  &__link {
+    @include font-size(21, 26);
+
+    &_desk {
+      display: inline-block;
+    }
+    &_mob {
+      display: none;
+    }
+  }
+
+  &__img-box {
+    width: 100%;
+    flex: 1;
+
+    svg {
+      margin-right: 0;
+    }
+  }
+}

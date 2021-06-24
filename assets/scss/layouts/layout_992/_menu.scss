@@ -1,0 +1,36 @@
+.menu {
+  @include flex(flex-start, center);
+  display: inline-flex;
+  padding-bottom: 0;
+
+  &_header {
+    width: auto;
+    overflow-y: hidden;
+    padding: 0;
+
+    .menu-item {
+      @include font-size(18, 31);
+    }
+  }
+
+  &_footer {
+    .menu-item {
+      @include font-size(18, 31);
+    }
+  }
+
+  .menu-item {
+    padding-bottom: 0;
+    margin-right: 30px;
+
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $menuTextHover;
+    }
+  }
+
+  .current-menu-item {
+    color: $menuTextCurrent;
+  }
+}

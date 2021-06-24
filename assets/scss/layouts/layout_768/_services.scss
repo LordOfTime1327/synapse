@@ -1,0 +1,12 @@
+.services {
+  padding-bottom: 55px;
+
+  &__row {
+    @include flex(space-between, stretch, row, wrap);
+  }
+
+  &__card {
+    flex: 0 0 calc(50% - 15px);
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,24 @@
+.form {
+  @include flex(space-between, flex-start, row, wrap);
+
+  &__item {
+    flex: 0 0 calc(50% - 15px);
+    padding-bottom: 20px;
+
+    &_textarea {
+      flex: 0 0 100%;
+      padding-bottom: 40px;
+    }
+
+    &_submit {
+      flex: 0 0 100%;
+    }
+  }
+
+  &__btn {
+    @include font-size(21, 26);
+    width: unset;
+    padding-left: 51px;
+    padding-right: 51px;
+  }
+}

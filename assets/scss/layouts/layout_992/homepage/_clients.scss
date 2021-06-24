@@ -1,0 +1,30 @@
+.clients {
+  &__title-box {
+    padding-bottom: 13px;
+  }
+  &__title {
+    @include font-size(62, 76);
+    padding-right: 60px;
+  }
+
+  &__text-box {
+    @include font-size(18, 31);
+    padding-bottom: 72px;
+  }
+  &__text {
+    flex: 0 0 50%;
+    padding: 15px 0;
+
+    &:nth-child(odd) {
+      padding-right: 50px;
+      border-right: 1px solid $clientsText;
+    }
+    &:nth-child(even) {
+      padding-left: 50px;
+    }
+  }
+
+  &__img-box {
+    padding: 28px;
+  }
+}

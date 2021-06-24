@@ -1,0 +1,27 @@
+.home-contact-us {
+  padding-bottom: 46px;
+
+  &__title {
+    @include font-size(24, 33);
+    font-weight: $light;
+    color: $contactTitle;
+    text-transform: capitalize;
+    padding-bottom: 6px;
+
+    position: relative;
+  }
+
+  &__subtitle {
+    @include font-size(18, 31);
+    font-weight: $light;
+    color: $contactTitle;
+    padding-bottom: 5px;
+  }
+
+  &__text {
+    @include font-size(12, 21);
+    font-weight: $light;
+    color: $contactText;
+    padding-bottom: 8px;
+  }
+}

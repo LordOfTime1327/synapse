@@ -1,0 +1,15 @@
+.home-contact-us {
+  &__title {
+    @include font-size(42, 65);
+    padding-bottom: 16px;
+  }
+
+  &__subtitle {
+    @include font-size(24, 42);
+    padding-bottom: 10px;
+  }
+
+  &__text {
+    @include font-size(16, 26);
+  }
+}

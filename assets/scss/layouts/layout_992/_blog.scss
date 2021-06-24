@@ -1,0 +1,80 @@
+.blog-page {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.blog {
+  &__page-title {
+    @include font-size(55, 65);
+    padding-bottom: 20px;
+  }
+
+  &__cat {
+    @include font-size(18, 31);
+    margin-right: 23px;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: rgba(41, 171, 226, 0.1);
+    }
+  }
+
+  &__card {
+    @include flex(flex-start, stretch, row, nowrap);
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__img-box {
+    flex: 0 1 430px;
+    height: auto;
+    border-radius: 9px 0 0 9px;
+  }
+
+  &__text-box {
+    flex: 1;
+    padding: 40px 50px;
+  }
+
+  &__data {
+    padding-bottom: 16px;
+  }
+
+  &__date-box {
+    @include flex(flex-start, center, row, nowrap);
+
+    svg {
+      width: 10px;
+    }
+  }
+  &__date {
+    @include font-size(14, 24);
+  }
+
+  &__category {
+    @include font-size(14, 24);
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: rgba(41, 171, 226, 0.2);
+    }
+  }
+
+  &__title {
+    @include font-size(30, 36);
+
+    @include truncate(2, 36px);
+  }
+
+  &__content {
+    @include font-size(18, 31);
+    padding-bottom: 25px;
+  }
+
+  &__btn {
+    padding: 14px 42px;
+  }
+}

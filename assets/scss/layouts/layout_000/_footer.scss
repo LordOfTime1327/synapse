@@ -1,0 +1,37 @@
+.footer {
+  background: $footerBg;
+  padding: 22px 0 29px;
+
+  &__row {
+    @include flex(flex-start, center, column);
+  }
+
+  &__logo-box {
+    display: block;
+    max-width: 173px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 17px;
+  }
+  &__logo-img {
+    @include img-fluid;
+  }
+
+  &__soc-box {
+    @include flex(flex-start, center, row, nowrap);
+  }
+  &__soc-item {
+    display: block;
+    width: 28px;
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.single-services-page {
+  padding-top: 90px;
+}
+
+.single {
+  .blog {
+    padding-top: 90px;
+    padding-bottom: 85px;
+  }
+}
+
+.single-page {
+  padding-bottom: 85px;
+
+  &_blog {
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    @include font-size(55, 65);
+    padding-bottom: 22px;
+
+    &_services {
+      padding-bottom: 50px;
+    }
+  }
+
+  &__data {
+    padding-bottom: 22px;
+  }
+
+  &__date-box {
+    svg {
+      width: 21px;
+      margin-right: 12px;
+    }
+  }
+  &__date {
+    @include font-size(20, 35);
+  }
+
+  &__category {
+    @include font-size(20, 35);
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: rgba(41, 171, 226, 0.2);
+    }
+  }
+
+  &__img-box {
+    margin-bottom: 32px;
+
+    &_services {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__content {
+    @include font-size(18, 31);
+
+    h1 {
+      @include font-size(28);
+    }
+    h2 {
+      @include font-size(24);
+    }
+    h3 {
+      @include font-size(20);
+    }
+    h4 {
+      @include font-size(18);
+    }
+    h5 {
+      @include font-size(16);
+    }
+    h6 {
+      @include font-size(13);
+    }
+  }
+}
+
+.offer {
+  padding: 50px 85px;
+
+  &__content-box {
+    @include flex(space-between, center, row, nowrap);
+  }
+
+  &__text {
+    flex: 0 0 50%;
+    @include font-size(30, 36);
+    text-align: unset;
+    padding-bottom: 0;
+  }
+
+  &__btn {
+    @include font-size(21, 26);
+    padding: 20px 28px;
+  }
+}
+
+.similar-posts {
+  &__title {
+    @include font-size(55, 65);
+    padding-bottom: 27px;
+  }
+}

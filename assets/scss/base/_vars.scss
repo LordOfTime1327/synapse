@@ -1,0 +1,109 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:ital,wght@1,300&display=swap");
+
+$Montserrat: "Montserrat", sans-serif;
+
+$mainFont: $Montserrat;
+
+$baseFontSize: 16px;
+
+$thin: 100;
+$extralight: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$heavy: 900;
+
+// Colors
+$white: #fff;
+$black: #000;
+
+$grey: #949494;
+$darkGrey: #2c2c2c;
+$darkGrey2: #202020;
+$blue: #29abe2;
+$blue2: #2470ad;
+
+//
+$bodyBg: $darkGrey2;
+
+$textColor: $white;
+
+$headerBg: $darkGrey;
+$footerBg: $darkGrey;
+
+$menuText: $grey;
+$menuTextHover: $white;
+$menuTextCurrent: $white;
+$menuBg: $darkGrey;
+
+$burger: $blue;
+
+$footerIconHover: $blue;
+
+$introTitle: $white;
+
+$btnText: $white;
+$btnBg: $blue;
+$btnHover: #3ec6ff;
+$btnActive: #24a1d7;
+
+$homeSerSlBg: $blue2;
+$homeSerTitle: $white;
+$homeSerArrow: $white;
+$homeSerDot: $white;
+
+$advItemBg: $darkGrey;
+$advTitle: $white;
+$advText: $grey;
+
+$clientsTitle: $white;
+$clientsText: $grey;
+$clientsBg: $darkGrey;
+
+$contactTitle: $white;
+$contactSubtitle: $grey;
+$contactText: $grey;
+$contactUnderline: $blue;
+
+$formLabel: $grey;
+$formField: $darkGrey;
+$formFieldText: $grey;
+
+$servCard: $blue2;
+$servCardText: $white;
+
+$text404: $white;
+$title404: $blue;
+
+$singleCaptions: $white;
+$singleText: $grey;
+$singleCatText: $blue;
+
+$postCatText: $white;
+$postCatBg: $blue;
+
+$offerText: $white;
+$offerBg: $darkGrey;
+
+$blogBg: $darkGrey;
+$blogText: $white;
+
+$blogCat: $blue;
+$blogCatCurrent: $white;
+
+$pagText: #828282;
+$pagTextCurrent: $white;
+$pagBg: $darkGrey;
+$pagBgHover: #414141;
+$pagBgCurrent: $blue;
+
+$aboutTitle: $white;
+$aboutText: $grey;
+$aboutGoalBg: $darkGrey;
+
+$toTopBg: $darkGrey;
+$toTopBgHover: $blue;

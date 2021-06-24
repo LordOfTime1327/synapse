@@ -1,0 +1,39 @@
+.page-404 {
+  padding: 70px 0;
+
+  &__box {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__text {
+    @include font-size(120, 160);
+    color: $title404;
+    text-align: center;
+  }
+
+  &__msg {
+    @include font-size(22, 38);
+    font-weight: $light;
+    color: $text404;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  &__btn-box {
+    @include flex(center, center, row, nowrap);
+  }
+  &__btn-home {
+    @include font-size(16, 20);
+    margin-right: 22px;
+  }
+  &__btn-back {
+    @include font-size(16, 20);
+  }
+
+  svg {
+    display: none;
+  }
+}

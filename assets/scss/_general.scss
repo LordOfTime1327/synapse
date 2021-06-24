@@ -1,0 +1,239 @@
+* {
+  @include reset;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scrollbar-color: $blue $darkGrey;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $blue;
+    border-radius: 10px;
+  }
+
+  height: 100%;
+}
+
+body {
+  font-family: $mainFont;
+
+  @include flex(space-between, stretch, column, nowrap);
+  min-height: 100vh;
+
+  background: $bodyBg;
+  color: $textColor;
+
+  overflow-x: hidden;
+}
+
+.stop-scrolling {
+  overflow: hidden;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  display: block;
+  max-width: 1650px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &_slim {
+    max-width: 1120px;
+  }
+}
+
+.home-slider {
+  height: 100%;
+}
+.home-slider__slide {
+  height: 100%;
+}
+
+[type="submit"] {
+  -webkit-appearance: none;
+}
+
+.btn {
+  display: block;
+  border: none;
+  outline: none;
+  background: $btnBg;
+  border-radius: 9px;
+  padding: 13px 37px;
+  box-shadow: 0px 15px 33px -19px #449be1;
+
+  @include font-inherit;
+  @include font-size(16, 22);
+  font-weight: $medium;
+  color: $btnText;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.btn2 {
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  outline: none;
+  background: transparent;
+  border-radius: 9px;
+  padding: 13px 37px;
+
+  @include font-inherit;
+  @include font-size(18, 25);
+  font-weight: $medium;
+  color: $btnText;
+  text-decoration: none;
+}
+
+.pagination {
+  @include flex(center, center, row, nowrap);
+
+  .page-numbers {
+    @include flex(center, center);
+    flex: 0 0 40px;
+    height: 40px;
+    margin-right: 16px;
+    background: $pagBg;
+    border-radius: 9px;
+
+    @include font-size(12, 28);
+    color: $pagText;
+    text-decoration: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.current {
+      background: $pagBgCurrent;
+      color: $pagTextCurrent;
+    }
+  }
+}
+
+.toTop {
+  @include flex(center, center);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  background: $toTopBg;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.75);
+  transition: box-shadow 0.3s ease, background 0.3s ease, opacity 0.3s ease,
+    visibility 0.3s ease;
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  svg {
+    display: block;
+    max-width: 15px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .btn {
+    @include font-size(24, 33);
+    padding: 18px 50px;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      background: $btnHover;
+      box-shadow: 0px 15px 38px -15px #449be1;
+    }
+
+    &:active {
+      background: $btnActive;
+      box-shadow: 0px 15px 38px -15px #449be1;
+    }
+
+    &.disabled,
+    &[disabled] {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+  }
+
+  .btn2 {
+    @include font-size(24, 33);
+    padding: 18px 50px;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease, border 0.3s ease;
+
+    &:hover {
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      background: rgba(255, 255, 255, 0.1);
+    }
+    &:active {
+      background: rgba(255, 255, 255, 0.19);
+      border: 1px solid rgba(255, 255, 255, 0.34);
+    }
+
+    &.disabled,
+    &[disabled] {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+  }
+
+  .pagination {
+    .page-numbers {
+      transition: background 0.3s ease;
+
+      &:hover:not(.dots) {
+        background: $pagBgHover;
+      }
+
+      &.current:hover {
+        background: $pagBgCurrent;
+      }
+    }
+  }
+
+  .toTop {
+    bottom: 130px;
+    right: 20px;
+    width: 79px;
+    height: 79px;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 8px 33px -7px #449be1;
+      background: $toTopBgHover;
+    }
+
+    svg {
+      max-width: 27px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .toTop {
+    right: 130px;
+  }
+}

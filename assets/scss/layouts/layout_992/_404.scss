@@ -1,0 +1,39 @@
+.page404 {
+  flex: 1;
+  @include flex(center, center, row, nowrap);
+  padding: 115px 0;
+  overflow: hidden;
+}
+
+.page-404 {
+  &__text {
+    @include font-size(189, 224);
+  }
+
+  svg {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(2.8);
+
+    g {
+      animation: blur 2s linear infinite;
+    }
+  }
+}
+
+@keyframes blur {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}

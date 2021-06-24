@@ -1,0 +1,31 @@
+.header {
+  padding: 24px 0;
+
+  &__logo {
+    max-width: 228px;
+  }
+
+  &__nav {
+    position: static;
+    height: auto;
+
+    @include flex(flex-end, center, row, nowrap);
+  }
+
+  &__contacts {
+    @include font-size(16, 20);
+    padding: 14px 40px;
+    white-space: nowrap;
+
+    &_mob {
+      display: none;
+    }
+    &_desk {
+      display: block;
+    }
+  }
+
+  &__burger {
+    display: none;
+  }
+}

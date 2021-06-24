@@ -1,0 +1,90 @@
+.about-us {
+  padding-top: 38px;
+  padding-bottom: 60px;
+  background-size: 100% !important;
+
+  &__intro {
+    padding-bottom: 30px;
+    text-transform: capitalize;
+  }
+  &__intro-btn {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  &__goal {
+    padding-bottom: 30px;
+  }
+  &__goal-box {
+    background: $aboutGoalBg;
+    padding: 20px;
+  }
+  &__goal-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba($white, 0.2);
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+  &__intro-title {
+    @include font-size(32, 44);
+    font-weight: $regular;
+    color: $aboutTitle;
+    padding-bottom: 12px;
+
+    &_mob {
+      display: block;
+    }
+    &_desk {
+      display: none;
+    }
+  }
+
+  &__caption {
+    @include font-size(21, 25);
+    font-weight: $light;
+    color: $aboutTitle;
+    text-transform: capitalize;
+    padding-bottom: 6px;
+  }
+
+  &__text-box {
+    @include font-size(12, 19);
+    font-weight: $light;
+    color: $aboutText;
+
+    p {
+      @include font-inherit;
+
+      padding-bottom: 15px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__intro-img-box {
+    padding-bottom: 38px;
+
+    img,
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__grow-box {
+    max-width: 660px;
+    width: 100%;
+  }
+}

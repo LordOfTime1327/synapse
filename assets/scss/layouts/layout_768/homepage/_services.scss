@@ -1,0 +1,6 @@
+.home-services {
+  &__section-title {
+    @include font-size(42, 65);
+    padding-bottom: 16px;
+  }
+}

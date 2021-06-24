@@ -1,0 +1,87 @@
+.form {
+  &__item {
+    padding-bottom: 12px;
+    position: relative;
+
+    .wpcf7-not-valid-tip {
+      display: none !important;
+    }
+  }
+
+  &__label {
+    @include font-size(18, 31);
+    font-weight: $light;
+    color: $formLabel;
+  }
+
+  &__field {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 9px;
+    background: $formField;
+    padding: 8px 15px;
+
+    font-family: inherit;
+    @include font-size(18, 31);
+    color: $formFieldText;
+
+    &_textarea {
+      resize: none;
+      height: 175px;
+    }
+  }
+
+  &__submit-box {
+    display: inline-block;
+    position: relative;
+  }
+  &__btn {
+    display: block;
+    width: 100%;
+  }
+
+  .wpcf7-not-valid {
+    background: rgba(254, 107, 107, 0.06);
+  }
+  .wpcf7-not-valid-tip {
+    display: block;
+  }
+  .wpcf7-response-output {
+    margin: 0 !important;
+  }
+  .ajax-loader {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
+
+.wpcf7 form .wpcf7-response-output {
+  padding: 15px 0 15px 50px;
+  border: none;
+}
+.wpcf7 form.invalid .wpcf7-response-output {
+  background: url(../assets/svg/Fail.svg) left center no-repeat;
+}
+.wpcf7 form.sent .wpcf7-response-output {
+  background: url(../assets/svg/good.svg) left center no-repeat;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: $formFieldText;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

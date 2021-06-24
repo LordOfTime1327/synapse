@@ -1,0 +1,41 @@
+.advantages {
+  padding-bottom: 50px;
+
+  &__section-title {
+    @include font-size(42, 65);
+    padding-bottom: 16px;
+  }
+
+  &__intro-text-box {
+    @include flex(flex-start, flex-start, row, nowrap);
+    padding-bottom: 40px;
+  }
+
+  &__intro-text {
+    flex: 0 0 50%;
+    @include font-size(18, 31);
+    padding: 15px 0;
+
+    &:nth-child(odd) {
+      padding-right: 50px;
+      border-right: 1px solid $clientsText;
+    }
+    &:nth-child(even) {
+      padding-left: 50px;
+    }
+  }
+
+  &__box {
+    @include flex(space-between, stretch, row, wrap);
+  }
+
+  &__item {
+    flex: 0 0 calc(50% - 15px);
+
+    margin-bottom: 15px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}

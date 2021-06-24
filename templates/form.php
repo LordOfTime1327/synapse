@@ -1,0 +1,2 @@
+<?php if( is_front_page() ) : echo do_shortcode('[contact-form-7 id="188" title="Contact form 1" html_class="form home-contact-us__form"]'); endif; ?>
+<?php if( is_page( 'contact-us' ) ) : echo do_shortcode('[contact-form-7 id="188" title="Contact form 1" html_class="form contact-us__form"]'); endif; ?>

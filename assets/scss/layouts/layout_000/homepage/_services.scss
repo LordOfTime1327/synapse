@@ -1,0 +1,91 @@
+.home-services {
+  margin-bottom: 16px;
+
+  &__section-title {
+    @include font-size(24, 32);
+    font-weight: $light;
+    color: $homeSerTitle;
+    text-transform: capitalize;
+    padding-bottom: 13px;
+  }
+
+  &__slider {
+    border-radius: 16px;
+    box-shadow: 0px 15px 79px -19px #449be1;
+  }
+
+  .swiper-wrapper {
+    align-items: stretch;
+  }
+  &__slide {
+    @include flex(space-between, center, row, nowrap);
+    width: 100% !important;
+    height: auto;
+    border-radius: 16px;
+
+    padding: 25px;
+    background: $homeSerSlBg;
+  }
+
+  &__text-box {
+    flex: 0 0 50%;
+    @include flex(flex-start, flex-start, column);
+  }
+
+  &__title {
+    @include font-size(18, 22);
+    font-weight: $light;
+    color: $homeSerTitle;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+  }
+
+  &__subtitle {
+    @include font-size(12, 16);
+    font-weight: $light;
+  }
+
+  &__link {
+    @include font-size(13, 18);
+    text-transform: capitalize;
+    padding: 8px 25px;
+    margin-top: 16px;
+  }
+
+  &__img-box {
+    flex: 0 0 50%;
+
+    img {
+      @include img-fluid;
+      height: auto;
+    }
+  }
+
+  &__nav {
+    margin-top: 15px;
+  }
+  &__arrow-box {
+    @include flex(center, center, row, wrap);
+    padding-bottom: 16px;
+  }
+  &__arrow {
+    position: static;
+    color: $homeSerArrow;
+    margin: 0 10px;
+    outline: none;
+  }
+  &__pagination {
+    flex: 0 0 100%;
+    position: static;
+
+    .swiper-pagination-bullet {
+      background: $homeSerDot;
+      opacity: 0.1;
+      margin: 0 4px;
+    }
+    .swiper-pagination-bullet-active {
+      background: $homeSerDot;
+      opacity: 1;
+    }
+  }
+}

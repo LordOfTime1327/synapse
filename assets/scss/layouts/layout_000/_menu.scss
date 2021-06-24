@@ -1,0 +1,40 @@
+.menu {
+  list-style-type: none;
+  list-style-position: inside;
+
+  padding-bottom: 34px;
+
+  &_header {
+    @include flex(center, center, column);
+
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 50px 0;
+
+    .menu-item {
+      @include font-size(30, 52);
+    }
+  }
+  &_footer {
+    .menu-item {
+      @include font-size(20, 35);
+    }
+  }
+
+  .menu-item {
+    font-weight: $light;
+    color: $menuText;
+    text-align: center;
+    padding-bottom: 25px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    a {
+      @include font-inherit;
+      text-decoration: none;
+    }
+  }
+}

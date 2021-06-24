@@ -1,0 +1,91 @@
+.about-us {
+  padding-top: 90px;
+  padding-bottom: 125px;
+  background-size: auto !important;
+
+  &__intro {
+    padding-bottom: 110px;
+  }
+  &__intro-row {
+    @include flex(center, center, row, nowrap);
+  }
+  &__intro-text-box {
+    order: -1;
+    flex: 0 0 50%;
+    padding-right: 75px;
+  }
+  &__intro-btn {
+    @include font-size(21, 26);
+    margin-top: 45px;
+  }
+
+  &__goal {
+    padding-bottom: 113px;
+  }
+  &__goal-box {
+    @include flex(space-between, stretch, row, wrap);
+    padding: 60px;
+  }
+  &__goal-item {
+    flex: 1 0 50%;
+    padding: 0;
+    padding: 0 85px;
+    border-bottom: none;
+    border-right: 1px solid rgba($white, 0.2);
+
+    &:nth-child(2n) {
+      border: none;
+    }
+    &:nth-child(3n) {
+      padding-left: 0;
+    }
+    &:nth-child(n + 3) {
+      margin-top: 60px;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      border-right: none;
+    }
+  }
+
+  &__intro-title {
+    @include font-size(55, 65);
+    padding-bottom: 31px;
+
+    &_mob {
+      display: none;
+    }
+    &_desk {
+      display: block;
+    }
+  }
+
+  &__caption {
+    @include font-size(42, 50);
+    padding-bottom: 15px;
+
+    &_grow {
+      padding-bottom: 42px;
+    }
+  }
+
+  &__text-box {
+    @include font-size(18, 31);
+
+    &_grow {
+      p {
+        padding-bottom: 42px;
+      }
+    }
+  }
+
+  &__intro-img-box {
+    flex: 0 0 50%;
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,54 @@
+#intro-particles {
+  position: relative;
+
+  canvas {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.intro {
+  padding-top: 38px;
+  padding-bottom: 46px;
+
+  &__row {
+    @include flex(center, center, column);
+  }
+
+  &__title {
+    @include font-size(33, 39);
+    font-weight: $regular;
+    color: $introTitle;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+  }
+
+  &__link {
+    @include font-size(18, 22);
+    position: relative;
+    z-index: 1;
+
+    &_desk {
+      display: none;
+    }
+    &_mob {
+      display: inline-block;
+    }
+  }
+
+  &__img-box {
+    width: 70%;
+    padding-bottom: 50px;
+
+    svg {
+      display: block;
+      max-width: 100%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+}
